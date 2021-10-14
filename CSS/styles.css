@@ -1,0 +1,248 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body
+{
+    overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* top navigation bar */
+.topnav {
+    z-index: 2;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 100%;
+    height: 5%;
+    width: 100%;
+    display: table;
+    transition: 0.6s;
+}
+
+.topnav:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0.9% 1%;
+    text-decoration: none;
+    transition: 0.15s;
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-top: 3.2%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0% 50% 50% 0%;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: black;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Create two equal columns that floats next to each other */
+.column
+{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 0 10px;
+    color: black;
+    font-size: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px)
+{
+    .column
+    {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.parallax {
+    background-image: url("https://picsum.photos/1440/400");
+
+    /* Set a specific height */
+    height: 30%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.content {
+    position: absolute;
+    /* Position the background text */
+    background: rgba(0, 0, 0, 0.8);
+    /* Black background with 0.7 opacity */
+    color: white;
+    height: 30%;
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    display: table;
+    transition: 0.6s;
+}
+
+.content:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.row .column a img {
+    transition: 0.3s;
+}
+
+.row .column a img:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px black;
+}
+
