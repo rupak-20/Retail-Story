@@ -1,0 +1,49 @@
+hr {
+  border-top: solid 0.5vh;
+}
+
+.product-row {
+  margin: 2vh 0 2vh 0;
+}
+.product-row .product-col {
+  margin: 2vh 0 2vh 0;
+  text-align: center;
+}
+.product-row .product-col a {
+  color: black;
+  text-decoration: none;
+  font-size: 80%;
+}
+.product-row .product-col a img {
+  box-shadow: 1px 1px 3px;
+  transition: ease-out 0.2s;
+  margin-bottom: 1vh;
+}
+.product-row .product-col a img:hover {
+  transform: scale(1.06);
+  box-shadow: 2px 2px 5px;
+}
+.product-row .product-col a p {
+  margin: 0;
+}
+
+.footer {
+  margin-top: 4vh;
+  padding: 8vh 0 6vh 0;
+  background: #002d55;
+  transition: ease-out 0.2s;
+  border-top: solid 4vh #0064bb;
+  color: white;
+  text-align: center;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer:hover {
+  background: #003869;
+  border-top: solid 4vh #0064bb;
+}
+
+/*# sourceMappingURL=main.css.map */

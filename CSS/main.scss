@@ -1,0 +1,89 @@
+//main scss
+
+@use "sass:math";
+
+//light theme colours
+$primary : rgb(0, 56, 105);
+$secondary : rgb(0, 45, 85);
+$tertiary : rgb(255, 255, 255);
+$highlight : rgb(0, 100, 187);
+$accent: rgb(0, 0, 0);
+$wallpaper : rgb(255, 255, 255, 0.7);
+
+//dark theme colours
+$primaryDark: rgb(0, 0, 0, 0.6);
+$secondaryDark : rgb(0, 0, 0, 0.8);
+$tertiaryDark: rgb(0, 58, 109);
+$highlightDark : rgb(0, 77, 145);
+$accentDark: rgb(255, 255, 255);
+$wallpaperDark: rgb(0, 0, 0, 0.3);
+
+$delay: 0.2s;
+$scalingFactor: 1.06;
+
+//google font
+//<link rel="preconnect" href="https://fonts.googleapis.com">
+//<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+//<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet"> 
+//$fontStack : 'Cormorant', serif;
+
+//navbar
+
+//image carousel
+
+hr {
+    border-top: solid 0.5vh;
+}
+
+//product row and column
+.product-row {
+    margin: 2vh 0 2vh 0;
+    
+    .product-col {
+        margin: 2vh 0 2vh 0;
+        text-align: center;
+
+        a {
+            color: $accent;
+            text-decoration: none;
+            font-size: 80%;
+
+            img {
+                //border-radius: 10%;
+                box-shadow: 1px 1px 3px;
+                transition: ease-out $delay;
+                margin-bottom: 1vh;
+            }
+
+            img:hover {
+                transform: scale($scalingFactor);
+                box-shadow: 2px 2px 5px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+//footer
+.footer {
+    margin-top: 4vh;
+    padding: 8vh 0 6vh 0;
+    background: $secondary;
+    transition: ease-out $delay;
+    border-top: solid 4vh $highlight;
+    color: $tertiary;
+    text-align: center;
+
+    a {
+        color: $tertiary;
+        text-decoration: none;
+    }
+}
+
+.footer:hover {
+    background: $primary;
+    border-top: solid 4vh $highlight
+}

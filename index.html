@@ -1,181 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website name</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\CSS\main.css">
+
+    <title>Retail-Story</title>
 </head>
 
 <body>
-    <!--top topnav-->
-    <div class="topnav" id="sec2">
-        <a href="home.html">Home </a>
-        <a href="elctronics.html">Elctronics</a>
-        <a href="fashion.html">Fashion</a>
-        <a href="furniture.html">Furniture</a>
-        <a href="grocerries.html">Grocerries</a>
-        <a href="#bottom">About us</a>
-        <a href="profile.html">Profile</a>
-        <a href="cart.html">Cart</a>
-    </div>
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <img src="https://picsum.photos/1440/300" width="100%">
-            <div class="text">Caption One</div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="https://picsum.photos/1440/300" width="100%">
-            <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="https://picsum.photos/1440/300" width="100%">
-            <div class="text">Caption Three</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-
-    <!--row-->
-    <div class="row">
-        <div class="column">
-            <br>
-            <a href="product1.html"><img src="https://picsum.photos/210">
-            <h3>Product 1</h3>
-            </a>
-            <p>Product Description</p>
-            <br>
-        </div>
-        <div class="column">
-            <br>
-            <a href="product2.html"><img src="https://picsum.photos/210">
-            <h3>Product 2</h3>
-            </a>
-            <p>Product description</p>
-            <br>
-        </div>
-        <div class="column">
-            <br>
-            <a href="product3.html"><img src="https://picsum.photos/210">
-            <h3>Product 3</h3>
-            </a>
-            <p>Product Description</p>
-            <br>
-        </div>
-        <div class="column">
-            <br>
-            <a href="product4.html"><img src="https://picsum.photos/210">
-            <h3>Product 4</h3>
-            </a>
-            <p>Product description</p>
-            <br>
-        </div>
-        <div class="column">
-            <br>
-            <a href="product5.html"><img src="https://picsum.photos/210">
-            <h3>Product 5</h3>
-            </a>
-            <p>Product description</p>
-            <br>
+    <!--navbar-->
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <!--to be completed-->
+            <p>navbar</p>
         </div>
     </div>
 
-     <!--row-->
-     <div class="row">
-        <div class="column">
-            <br>
-            <a href="product1.html"><img src="https://picsum.photos/210">
-            <h3>Product 1</h3>
-            </a>
-            <p>Product Description</p>
-            <br>
-        </div>
-        <div class="column">
-            <br>
-            <a href="product2.html"><img src="https://picsum.photos/210">
-            <h3>Product 2</h3>
-            </a>
-            <p>Product description</p>
-            <br>
-        </div>
-        <div class="column">
-            <br>
-            <a href="product3.html"><img src="https://picsum.photos/210">
-            <h3>Product 3</h3>
-            </a>
-            <p>Product Description</p>
-            <br>
-        </div>
-        <div class="column">
-            <br>
-            <a href="product4.html"><img src="https://picsum.photos/210">
-            <h3>Product 4</h3>
-            </a>
-            <p>Product description</p>
-            <br>
-        </div>
-        <div class="column">
-            <br>
-            <a href="product5.html"><img src="https://picsum.photos/210">
-            <h3>Product 5</h3>
-            </a>
-            <p>Product description</p>
-            <br>
+    <!--image carousel-->
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <!--to be completed-->
+            <p>image carousel</p>
         </div>
     </div>
 
-    <!--banner-->
-    <div class="parallax" id="bottom">
-    <div class="content">
-        <span>About Us</span>
+    <!--product display-->
+    <div class="container">
+        <div class="row justify-content-center align-items-center product-row">
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=1" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=2" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=3" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1random=4" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1random=5" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1random=6" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1random=7" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1random=8" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1random=9" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1random=10" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row justify-content-center align-items-center product-row">
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=11" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=12" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=13" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=14" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=15" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=16" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=17" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=18" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=19" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+            <div class="col-12 col-sm-auto product-col">
+                <a href="#">
+                    <img src="https://picsum.photos/200/?blur=1?random=20" alt="product">
+                    <p>Product</p>
+                    <p>Product description</p>
+                </a>
+            </div>
+        </div>
     </div>
-    </div>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm">
+                    <ul class="list-unstyled">
+                        <p>My other projects :)</p>
+                        <li><a href="https://github.com/rupak-20/Criptify">Criptify</a></li>
+                        <li><a href="https://github.com/rupak-20/Virtual-Chess">Virtual Chess</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <a href="https://www.linkedin.com/in/rupak-swami-071468190/">Let's connect</a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <a href="https://github.com/rupak-20/">Follow me on Github</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--js modules-->
+    <script src="..\node_modules\jquery\dist\jquery.slim.min.js"></script>
+    <script src="..\node_modules\popper.js\dist\umd\popper.min.js"></script>
+    <script src="..\node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
 
 </body>
+
+</html>
