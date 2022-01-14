@@ -73,7 +73,7 @@ hr {
     padding: 8vh 0 6vh 0;
     background: $secondary;
     transition: ease-out $delay;
-    border-top: solid 4vh $highlight;
+    border-top: solid 2vh $highlight;
     color: $tertiary;
     text-align: center;
 
@@ -85,5 +85,5 @@ hr {
 
 .footer:hover {
     background: $primary;
-    border-top: solid 4vh $highlight
+    border-top: solid 2vh $highlight
 }

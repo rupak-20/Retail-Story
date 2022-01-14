@@ -32,7 +32,7 @@ hr {
   padding: 8vh 0 6vh 0;
   background: #002d55;
   transition: ease-out 0.2s;
-  border-top: solid 4vh #0064bb;
+  border-top: solid 2vh #0064bb;
   color: white;
   text-align: center;
 }
@@ -43,7 +43,7 @@ hr {
 
 .footer:hover {
   background: #003869;
-  border-top: solid 4vh #0064bb;
+  border-top: solid 2vh #0064bb;
 }
 
 /*# sourceMappingURL=main.css.map */
