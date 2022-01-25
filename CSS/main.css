@@ -32,7 +32,7 @@ hr {
   padding: 8vh 0 6vh 0;
   background: #002d55;
   transition: ease-out 0.2s;
-  border-top: solid 2vh #0064bb;
+  border-top: solid 1vh #0064bb;
   color: white;
   text-align: center;
 }
@@ -40,10 +40,39 @@ hr {
   color: white;
   text-decoration: none;
 }
+.footer a:hover {
+  color: #a8d6ff;
+}
 
 .footer:hover {
   background: #003869;
-  border-top: solid 2vh #0064bb;
+}
+
+.navbar-container {
+  margin: 0;
+  padding: 2vh 0 1vh 0;
+  background: #002d55;
+  border-bottom: solid 1vh #0064bb;
+  font-size: 90%;
+  color: white;
+  text-align: center;
+  transition: ease-in-out 0.2s;
+  opacity: 0.9;
+}
+.navbar-container a {
+  color: white;
+  text-decoration: none;
+}
+.navbar-container a:hover {
+  color: #a8d6ff;
+}
+.navbar-container .navbar-row {
+  padding: 0 1vw 0 1vw;
+}
+
+.navbar-container:hover {
+  background: #003869;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

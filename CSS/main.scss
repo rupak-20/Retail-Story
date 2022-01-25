@@ -7,6 +7,7 @@ $primary : rgb(0, 56, 105);
 $secondary : rgb(0, 45, 85);
 $tertiary : rgb(255, 255, 255);
 $highlight : rgb(0, 100, 187);
+$selected : rgb(168, 214, 255);
 $accent: rgb(0, 0, 0);
 $wallpaper : rgb(255, 255, 255, 0.7);
 
@@ -15,6 +16,7 @@ $primaryDark: rgb(0, 0, 0, 0.6);
 $secondaryDark : rgb(0, 0, 0, 0.8);
 $tertiaryDark: rgb(0, 58, 109);
 $highlightDark : rgb(0, 77, 145);
+$selectedDark : rgb(0, 136, 255);
 $accentDark: rgb(255, 255, 255);
 $wallpaperDark: rgb(0, 0, 0, 0.3);
 
@@ -73,7 +75,7 @@ hr {
     padding: 8vh 0 6vh 0;
     background: $secondary;
     transition: ease-out $delay;
-    border-top: solid 2vh $highlight;
+    border-top: solid 1vh $highlight;
     color: $tertiary;
     text-align: center;
 
@@ -81,9 +83,42 @@ hr {
         color: $tertiary;
         text-decoration: none;
     }
+
+    a:hover {
+        color: $selected;
+    }
 }
 
 .footer:hover {
     background: $primary;
-    border-top: solid 2vh $highlight
+}
+
+.navbar-container {
+    margin: 0;
+    padding: 2vh 0 1vh 0;
+    background: $secondary;
+    border-bottom: solid 1vh $highlight;
+    font-size: 90%;
+    color: $tertiary;
+    text-align: center;
+    transition: ease-in-out $delay;
+    opacity: 0.9;
+
+    a {
+        color: $tertiary;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $selected;
+    }
+
+    .navbar-row {
+        padding: 0 1vw 0 1vw;
+    }
+}
+
+.navbar-container:hover {
+    background: $primary;
+    opacity: 1;
 }
